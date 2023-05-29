@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "right right right"
+        "materiais materiais materiais"
+        "section section section"
+        "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 90vh 90vh 90vh 90vh 90vh 50vh;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+a {
+    color: #000F99;
+    text-decoration: none;
+}
+
+
+
+.o-menu {
+    display: flex;
+    grid-area: menu;
+    background-color: white;
+    margin: 0;
+    text-align: center;
+    align-items: self-end;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#imginicial {
+    width: 620px;
+    height: 395px;
+}
+
+
+#o-header {
+    display: flex;
+    flex-direction: row;
+    grid-area: header;
+    background-color: #FFD691;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#projetoalfa {
+    max-width: 45rem;
+    justify-content: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 180px;
+    display: flex;
+    color: #000F99;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+#projeto {
+    margin-left: 0px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 40px;
+    color: #000F99;
+    text-align: left;
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+#o-main {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-area: main;
+    background-color: white;
+}
+
+#imgprojeto {
+    width: 414px;
+    height: 581px;
+    margin-left: 5rem;
+    justify-content: center;
+}
+
+.col-quemsomos-text, .col-projeto-text {
+    max-width: 55rem;
+}
+
+#quemsomos {
+    margin-left: 2rem;
+    max-width: 514px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    color: #E6B507;
+    line-height: 90px;
+}
+
+#textoquemsomos {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+}
+
+
+#o-right {
+    display: flex;
+    grid-area: right;
+    background-color: #8E97E6;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#equipe {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 85px;
+    display: flex;
+    text-align: right;
+    color: #fff;
+    line-height: 90px;
+    animation: jackInTheBox;
+    animation-duration: 5s;
+    max-width: 30rem;
+}
+
+#textequipe {
+    margin-left: 2rem;
+    display: flex;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    animation: jackInTheBox;
+    animation-duration: 5s;
+    max-width: 30rem;
+}
+
+#o-left {
+    display: flex;
+    grid-area: left;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#baixeaqui {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    top: 2530px;
+}
+
+#o-section {
+    display: flex;
+    grid-area: section;
+    background-color: #E4E7FF;
+    text-align: center;
+    justify-content: center;
+}
+
+#depoimentos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 75px;
+    font-weight: bolder;
+    color: #000F99;
+}
+
+#retdepoimento1 {
+    display: flex;
+    align-items: center;
+    width: 60rem;
+    height: 378px;
+    left: 178px;
+    background: #FFD691;
+    border-radius: 13px;
+}
+
+#depoimento1 {
+    width: 60rem;
+    height: 253px;
+    left: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000F99;
+}
+
+
+#o-footer {
+    display: flex;
+    grid-area: footer;
+    background: #000F99;
+    justify-content: center;
+}
+
+#contatos {
+    color: #FFD691;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    padding: 15px;
+    text-align: center;
+}
+
+#insta {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    color: #E4E7FF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#arroba {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    color: #E4E7FF;
+}
+
+#email {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    color: #E4E7FF;
+}
+
+#gmail {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    color: #E4E7FF;
+}
+
+.footer-row {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-col {
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+#materiais {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-height: 90vh;
+    grid-area: materiais;
+    font-family: 'Montserrat', sans-serif;
+    /* O caminho da URL será o local da sua imagem */
+    background-image: url('../imagens/bg-materiais.png'); 
+
+    /* Isso ajudará a garantir que a imagem cubra toda a div */
+    background-size: cover; 
+
+    /* Centraliza a imagem na div */
+    background-position: center; 
+
+    /* Impede a repetição da imagem */
+    background-repeat: no-repeat;
+}
+
+#materiais h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #000F99;
+    margin-bottom: 2rem;
+}
+
+#materiais div {
+    margin-left: 6rem;
+}
+
+a.button {
+    display: flex;
+    width: 291px;
+    height: 57px;
+    left: 98px;
+    background: #FFD691;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    background-color: #000F99;
+    color: #E6B507;
+}
+
+button:hover {
+    background: #8E97E6;
+}

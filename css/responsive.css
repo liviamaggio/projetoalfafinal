@@ -1,0 +1,104 @@
+@media (max-width: 768px) {
+
+    #wrapper {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "right"
+            "materiais"
+            "section"
+            "footer";
+        grid-template-columns: auto;
+        grid-template-rows: 70vh 50vh 50vh 50vh 80vh 35vh;
+    }
+
+    #o-right,
+    #o-main,
+    #o-footer,
+    #o-section,
+    #materiais,
+    #o-header {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #imginicial,
+    #imgprojeto {
+        display: none;
+    }
+
+    #materiais {
+        background-image: none;
+    }
+
+    #materiais h1 {
+        font-weight: 100;
+        font-size: 30px;
+    }
+
+    #projeto {
+        font-size: 20px;
+        width: 475px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    #projetoalfa {
+        font-size: 4rem;
+        line-height: 80px;
+    }
+
+    #quemsomos {
+        font-size: 30px;
+    }
+
+    #textoquemsomos {
+        font-size: 15px;
+        width: 475px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    #equipe {
+        font-size: 30px;
+    }
+
+    #depoimentos {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    #retdepoimento1 {
+        width: 20rem;
+        height: 300px;
+        margin-left: 115px;
+    }
+
+    #depoimento1 {
+        font-size: 20px;
+    }
+
+    #contatos {
+        font-size: 30px;
+    }
+
+    #insta {
+        font-size: 15px;
+    } 
+    
+    #arroba {
+        font-size: 15px;
+    } 
+    
+    #email {
+        font-size: 15px;
+    } 
+    
+    #gmail  {
+        font-size: 15px;
+    }
+
+}
